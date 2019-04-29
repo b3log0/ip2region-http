@@ -39,7 +39,9 @@ func ipToRegion(c *gin.Context) {
 	ip := c.Query("ip")
 	ipr, err := region.MemorySearch(ip)
 	if nil != err {
-		result.Msg = err.Error()
+		msg := err.Error()
+		logger.Errorf("search ip [" + ip + "] failed: " + msg)
+		result.Msg = msg
 		c.JSON(http.StatusOK, result)
 
 		return
