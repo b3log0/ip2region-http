@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/b3log/ip2region-http/ip2region/binding/golang/ip2region"
+	"github.com/lionsoul2014/ip2region/binding/golang/ip2region"
 	"github.com/gin-gonic/gin"
 )
 
