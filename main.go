@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/lionsoul2014/ip2region/binding/golang/ip2region"
 	"github.com/gin-gonic/gin"
+	"github.com/lionsoul2014/ip2region/binding/golang/ip2region"
 )
 
 var logger *Logger
