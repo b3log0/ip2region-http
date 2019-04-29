@@ -56,7 +56,7 @@ func ipToRegion(c *gin.Context) {
 var region *ip2region.Ip2Region
 
 func main() {
-	region, _ = ip2region.New("ip2region/data/ip2region.db")
+	region, _ = ip2region.New("ip2region.db")
 	defer region.Close()
 
 	router := mapRoutes()
