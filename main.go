@@ -52,6 +52,7 @@ func ipToRegion(c *gin.Context) {
 		"province": ipr.Province,
 		"city":     ipr.City,
 	}
+	result.Code = CodeOk
 	c.JSON(http.StatusOK, result)
 }
 
